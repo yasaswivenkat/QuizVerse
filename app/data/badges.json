@@ -1,0 +1,86 @@
+[
+  {
+    "id": "first-blood",
+    "name": "First Leap",
+    "icon": "START",
+    "description": "Complete your very first quiz on QuizVerse.",
+    "category": "milestone"
+  },
+  {
+    "id": "perfectionist",
+    "name": "Flawless Mind",
+    "icon": "FLAWLESS",
+    "description": "Finish a quiz with 100% accuracy.",
+    "category": "accuracy"
+  },
+  {
+    "id": "speed-demon",
+    "name": "Lightning Reflex",
+    "icon": "SPEED",
+    "description": "Answer 5 consecutive questions in under 4 seconds each.",
+    "category": "speed"
+  },
+  {
+    "id": "streak-master",
+    "name": "Streak Maestro",
+    "icon": "STREAK",
+    "description": "Reach a streak combo of 10 correct answers in a single game.",
+    "category": "streak"
+  },
+  {
+    "id": "survivor-elite",
+    "name": "Iron Will",
+    "icon": "SHIELD",
+    "description": "Reach question 12 in Survival Mode without losing a single heart.",
+    "category": "survival"
+  },
+  {
+    "id": "blitz-champion",
+    "name": "Clock Stopper",
+    "icon": "TIME",
+    "description": "Score over 1,500 points in Time Blitz mode.",
+    "category": "speedrun"
+  },
+  {
+    "id": "ai-slayer",
+    "name": "Neural Overlord",
+    "icon": "AI",
+    "description": "Defeat the AI Rival in head-to-head battle mode.",
+    "category": "duel"
+  },
+  {
+    "id": "polymath",
+    "name": "The Polymath",
+    "icon": "ALL",
+    "description": "Play at least one quiz in every single category.",
+    "category": "versatility"
+  },
+  {
+    "id": "daily-devotee",
+    "name": "Daily Devotee",
+    "icon": "DAILY",
+    "description": "Maintain a 3-day streak on the Daily Challenge.",
+    "category": "daily"
+  },
+  {
+    "id": "architect",
+    "name": "Quiz Architect",
+    "icon": "STUDIO",
+    "description": "Create and publish a custom quiz in the Quiz Studio.",
+    "category": "creation"
+  },
+  {
+    "id": "grandmaster",
+    "name": "Grandmaster of Trivia",
+    "icon": "MASTER",
+    "description": "Accumulate 10,000 total lifetime XP.",
+    "category": "xp"
+  },
+  {
+    "id": "code-ninja",
+    "name": "Syntax Sorcerer",
+    "icon": "CODE",
+    "description": "Answer 10 code prediction challenges with zero mistakes.",
+    "category": "coding"
+  }
+]
