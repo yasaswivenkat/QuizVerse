@@ -1,0 +1,126 @@
+@media (max-width: 1024px) {
+  .stats-strip {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .options-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .podium-grid {
+    gap: 0.8rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+
+  .nav-links {
+    order: 3;
+    width: 100%;
+    overflow-x: auto;
+    justify-content: flex-start;
+    padding: 0.3rem;
+  }
+
+  .nav-item {
+    padding: 0.45rem 0.8rem;
+    font-size: 0.82rem;
+    white-space: nowrap;
+  }
+
+  .hero-section {
+    padding: 2rem 0 1rem;
+  }
+
+  .stats-strip {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.8rem;
+  }
+
+  .modes-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .categories-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .question-card {
+    padding: 1.4rem;
+  }
+
+  .question-text {
+    font-size: 1.15rem;
+  }
+
+  .arena-hud {
+    padding: 0.8rem 1rem;
+  }
+
+  .results-stats-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .results-score-big {
+    font-size: 3rem;
+  }
+
+  .podium-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .podium-card.first {
+    order: 1;
+    transform: none;
+  }
+
+  .podium-card.second {
+    order: 2;
+  }
+
+  .podium-card.third {
+    order: 3;
+  }
+
+  .ai-rival-bar {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.8rem;
+  }
+
+  .ai-speech-bubble {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .stats-strip {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-cta-group {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .hero-cta-group .btn {
+    width: 100%;
+  }
+
+  .hud-left, .hud-right {
+    gap: 0.4rem;
+  }
+
+  .lifelines-bar {
+    gap: 0.4rem;
+  }
+
+  .lifeline-btn {
+    font-size: 0.75rem;
+    padding: 0.4rem 0.7rem;
+  }
+}

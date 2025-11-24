@@ -1,0 +1,165 @@
+:root {
+  --font-display: 'Outfit', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-body: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-mono: 'JetBrains Mono', 'Fira Code', Consolas, monospace;
+
+  --transition-fast: 150ms cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-normal: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-slow: 400ms cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-spring: 500ms cubic-bezier(0.34, 1.56, 0.64, 1);
+
+  --radius-xs: 6px;
+  --radius-sm: 10px;
+  --radius-md: 16px;
+  --radius-lg: 22px;
+  --radius-xl: 30px;
+  --radius-full: 9999px;
+
+  /* Default Obsidian Dark Theme */
+  --bg-primary: #070913;
+  --bg-secondary: #0d1122;
+  --bg-card: rgba(15, 20, 40, 0.72);
+  --bg-card-hover: rgba(24, 32, 60, 0.82);
+  --bg-glass: rgba(255, 255, 255, 0.045);
+  --bg-glass-heavy: rgba(13, 17, 34, 0.94);
+  --bg-overlay: rgba(4, 6, 14, 0.88);
+
+  --border-subtle: rgba(255, 255, 255, 0.08);
+  --border-active: rgba(99, 102, 241, 0.6);
+  --border-glow: rgba(168, 85, 247, 0.65);
+  --border-gradient: linear-gradient(135deg, rgba(255, 255, 255, 0.18) 0%, rgba(255, 255, 255, 0.03) 50%, rgba(99, 102, 241, 0.3) 100%);
+
+  --text-primary: #f8fafc;
+  --text-secondary: #94a3b8;
+  --text-muted: #64748b;
+  --text-inverted: #070913;
+
+  --accent-primary: #6366f1;
+  --accent-primary-hover: #4f46e5;
+  --accent-secondary: #a855f7;
+  --accent-cyan: #06b6d4;
+  --accent-pink: #ec4899;
+  --accent-amber: #f59e0b;
+  --accent-emerald: #10b981;
+  --accent-rose: #f43f5e;
+
+  --gradient-brand: linear-gradient(135deg, #6366f1 0%, #a855f7 50%, #ec4899 100%);
+  --gradient-brand-shimmer: linear-gradient(90deg, #6366f1 0%, #a855f7 25%, #ec4899 50%, #a855f7 75%, #6366f1 100%);
+  --gradient-accent: linear-gradient(135deg, #06b6d4 0%, #3b82f6 100%);
+  --gradient-gold: linear-gradient(135deg, #fbbf24 0%, #f59e0b 50%, #d97706 100%);
+  --gradient-emerald: linear-gradient(135deg, #34d399 0%, #10b981 100%);
+  --gradient-rose: linear-gradient(135deg, #fb7185 0%, #f43f5e 100%);
+  --gradient-card: linear-gradient(180deg, rgba(255, 255, 255, 0.06) 0%, rgba(255, 255, 255, 0.01) 100%);
+
+  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.28);
+  --shadow-md: 0 10px 28px -6px rgba(0, 0, 0, 0.45);
+  --shadow-lg: 0 20px 48px -10px rgba(0, 0, 0, 0.65);
+  --shadow-glow: 0 0 35px rgba(99, 102, 241, 0.4);
+  --shadow-gold: 0 0 35px rgba(245, 158, 11, 0.4);
+  --shadow-specular: inset 0 1px 0 0 rgba(255, 255, 255, 0.14);
+  --shadow-card-elevated: inset 0 1px 0 0 rgba(255, 255, 255, 0.16), 0 24px 48px -12px rgba(0, 0, 0, 0.7);
+
+  --glow-emerald: 0 0 30px rgba(16, 185, 129, 0.45);
+  --glow-crimson: 0 0 30px rgba(244, 63, 94, 0.45);
+  --glow-cyan: 0 0 30px rgba(6, 182, 212, 0.45);
+
+  --blur-glass: blur(18px) saturate(180%);
+}
+
+[data-theme="cyberpunk"] {
+  --bg-primary: #040407;
+  --bg-secondary: #0a0b12;
+  --bg-card: rgba(14, 16, 26, 0.82);
+  --bg-card-hover: rgba(24, 28, 44, 0.92);
+  --bg-glass: rgba(0, 240, 255, 0.05);
+  --bg-glass-heavy: rgba(10, 12, 19, 0.96);
+  --bg-overlay: rgba(2, 3, 6, 0.94);
+
+  --border-subtle: rgba(0, 240, 255, 0.18);
+  --border-active: rgba(255, 230, 0, 0.75);
+  --border-glow: rgba(255, 0, 85, 0.75);
+  --border-gradient: linear-gradient(135deg, rgba(0, 240, 255, 0.3) 0%, rgba(255, 0, 85, 0.15) 50%, rgba(255, 230, 0, 0.3) 100%);
+
+  --text-primary: #ffffff;
+  --text-secondary: #a3b8cc;
+  --text-muted: #607286;
+
+  --accent-primary: #ffe600;
+  --accent-primary-hover: #ffd000;
+  --accent-secondary: #ff0055;
+  --accent-cyan: #00f0ff;
+  --accent-pink: #ff007f;
+  --accent-amber: #ff9900;
+  --accent-emerald: #00ff66;
+  --accent-rose: #ff2255;
+
+  --gradient-brand: linear-gradient(135deg, #ffe600 0%, #ff0055 50%, #00f0ff 100%);
+  --gradient-brand-shimmer: linear-gradient(90deg, #ffe600 0%, #ff0055 25%, #00f0ff 50%, #ff0055 75%, #ffe600 100%);
+  --shadow-glow: 0 0 40px rgba(0, 240, 255, 0.55);
+  --shadow-specular: inset 0 1px 0 0 rgba(0, 240, 255, 0.25);
+  --glow-emerald: 0 0 35px rgba(0, 255, 102, 0.55);
+  --glow-crimson: 0 0 35px rgba(255, 0, 85, 0.55);
+  --glow-cyan: 0 0 35px rgba(0, 240, 255, 0.55);
+}
+
+[data-theme="emerald"] {
+  --bg-primary: #04100c;
+  --bg-secondary: #081d16;
+  --bg-card: rgba(11, 35, 27, 0.78);
+  --bg-card-hover: rgba(16, 50, 39, 0.88);
+  --bg-glass: rgba(52, 211, 153, 0.06);
+  --bg-glass-heavy: rgba(8, 28, 21, 0.96);
+  --bg-overlay: rgba(2, 10, 8, 0.92);
+
+  --border-subtle: rgba(52, 211, 153, 0.18);
+  --border-active: rgba(16, 185, 129, 0.65);
+  --border-glow: rgba(245, 158, 11, 0.6);
+  --border-gradient: linear-gradient(135deg, rgba(52, 211, 153, 0.35) 0%, rgba(16, 185, 129, 0.1) 50%, rgba(245, 158, 11, 0.3) 100%);
+
+  --text-primary: #ecfdf5;
+  --text-secondary: #a7f3d0;
+  --text-muted: #6ee7b7;
+
+  --accent-primary: #10b981;
+  --accent-primary-hover: #059669;
+  --accent-secondary: #f59e0b;
+  --accent-cyan: #2dd4bf;
+  --accent-emerald: #10b981;
+
+  --gradient-brand: linear-gradient(135deg, #10b981 0%, #059669 50%, #f59e0b 100%);
+  --gradient-brand-shimmer: linear-gradient(90deg, #10b981 0%, #34d399 25%, #f59e0b 50%, #34d399 75%, #10b981 100%);
+  --shadow-glow: 0 0 35px rgba(16, 185, 129, 0.45);
+  --shadow-specular: inset 0 1px 0 0 rgba(52, 211, 153, 0.25);
+}
+
+[data-theme="daylight"] {
+  --bg-primary: #f8fafc;
+  --bg-secondary: #f1f5f9;
+  --bg-card: rgba(255, 255, 255, 0.92);
+  --bg-card-hover: rgba(255, 255, 255, 1);
+  --bg-glass: rgba(0, 0, 0, 0.03);
+  --bg-glass-heavy: rgba(255, 255, 255, 0.98);
+  --bg-overlay: rgba(15, 23, 42, 0.7);
+
+  --border-subtle: rgba(0, 0, 0, 0.1);
+  --border-active: rgba(99, 102, 241, 0.7);
+  --border-glow: rgba(168, 85, 247, 0.5);
+  --border-gradient: linear-gradient(135deg, rgba(99, 102, 241, 0.25) 0%, rgba(0, 0, 0, 0.05) 50%, rgba(236, 72, 153, 0.25) 100%);
+
+  --text-primary: #0f172a;
+  --text-secondary: #475569;
+  --text-muted: #94a3b8;
+  --text-inverted: #ffffff;
+
+  --accent-primary: #4f46e5;
+  --accent-primary-hover: #4338ca;
+  --accent-secondary: #9333ea;
+
+  --gradient-brand: linear-gradient(135deg, #4f46e5 0%, #7c3aed 50%, #db2777 100%);
+  --gradient-brand-shimmer: linear-gradient(90deg, #4f46e5 0%, #7c3aed 25%, #db2777 50%, #7c3aed 75%, #4f46e5 100%);
+  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.06);
+  --shadow-md: 0 10px 28px -6px rgba(0, 0, 0, 0.1);
+  --shadow-lg: 0 20px 48px -10px rgba(0, 0, 0, 0.14);
+  --shadow-glow: 0 0 30px rgba(99, 102, 241, 0.25);
+  --shadow-specular: inset 0 1px 0 0 rgba(255, 255, 255, 0.9);
+}
