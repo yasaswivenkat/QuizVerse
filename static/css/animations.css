@@ -1,0 +1,178 @@
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(24px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in-up {
+  animation: fadeInUp 0.4s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+@keyframes fadeInScale {
+  from {
+    opacity: 0;
+    transform: scale(0.94);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.animate-scale-in {
+  animation: fadeInScale 0.35s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+}
+
+@keyframes shake {
+  0%, 100% { transform: translateX(0); }
+  20%, 60% { transform: translateX(-9px); }
+  40%, 80% { transform: translateX(9px); }
+}
+
+.animate-shake {
+  animation: shake 0.4s ease-in-out;
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
+  40% { transform: translateY(-16px); }
+  60% { transform: translateY(-8px); }
+}
+
+.animate-bounce {
+  animation: bounce 2s infinite;
+}
+
+@keyframes flameFlicker {
+  0% { filter: drop-shadow(0 0 4px #f59e0b); transform: scale(1); }
+  50% { filter: drop-shadow(0 0 12px #ef4444); transform: scale(1.1); }
+  100% { filter: drop-shadow(0 0 5px #f59e0b); transform: scale(1); }
+}
+
+.flame-active {
+  display: inline-block;
+  animation: flameFlicker 1.2s infinite ease-in-out;
+}
+
+@keyframes pulseGlow {
+  0% { box-shadow: 0 0 12px rgba(99, 102, 241, 0.3); }
+  50% { box-shadow: 0 0 32px rgba(99, 102, 241, 0.7); }
+  100% { box-shadow: 0 0 12px rgba(99, 102, 241, 0.3); }
+}
+
+.pulse-glow {
+  animation: pulseGlow 2s infinite ease-in-out;
+}
+
+@keyframes floatSlow {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+  100% { transform: translateY(0px); }
+}
+
+.animate-float {
+  animation: floatSlow 4s infinite ease-in-out;
+}
+
+/* Option Button Staggered Entrance */
+@keyframes optionSlideIn {
+  from {
+    opacity: 0;
+    transform: translateY(18px) scale(0.97);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+.option-btn {
+  animation: optionSlideIn 0.35s cubic-bezier(0.16, 1, 0.3, 1) backwards;
+}
+
+.option-btn:nth-child(1) { animation-delay: 0.05s; }
+.option-btn:nth-child(2) { animation-delay: 0.1s; }
+.option-btn:nth-child(3) { animation-delay: 0.15s; }
+.option-btn:nth-child(4) { animation-delay: 0.2s; }
+
+/* Floating XP Toast */
+@keyframes floatXpToast {
+  0% {
+    opacity: 0;
+    transform: translateY(15px) scale(0.8);
+  }
+  20% {
+    opacity: 1;
+    transform: translateY(0px) scale(1.1);
+  }
+  75% {
+    opacity: 1;
+    transform: translateY(-20px) scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-40px) scale(0.9);
+  }
+}
+
+.floating-xp-pill {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 0.5rem 1.2rem;
+  border-radius: var(--radius-full);
+  background: var(--gradient-emerald);
+  color: #ffffff;
+  font-family: var(--font-display);
+  font-size: 1.1rem;
+  font-weight: 800;
+  box-shadow: 0 0 30px rgba(16, 185, 129, 0.6);
+  pointer-events: none;
+  z-index: 100;
+  animation: floatXpToast 1.2s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+/* AI Rival Radar Pulse */
+@keyframes radarRing {
+  0% {
+    box-shadow: 0 0 0 0 rgba(0, 240, 255, 0.6);
+  }
+  70% {
+    box-shadow: 0 0 0 15px rgba(0, 240, 255, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(0, 240, 255, 0);
+  }
+}
+
+.ai-radar-active {
+  animation: radarRing 2s infinite;
+}
+
+/* Hearts Beat */
+@keyframes heartbeat {
+  0% { transform: scale(1); }
+  14% { transform: scale(1.18); }
+  28% { transform: scale(1); }
+  42% { transform: scale(1.14); }
+  70% { transform: scale(1); }
+}
+
+.heart-beat {
+  animation: heartbeat 1.5s infinite ease-in-out;
+}
+
+#confettiCanvas {
+  position: fixed;
+  inset: 0;
+  width: 100vw;
+  height: 100vh;
+  pointer-events: none;
+  z-index: 9999;
+}
